@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>How To Prove It Solutions</title>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script type="text/javascript" 
-            id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        <meta charset="UTF-8">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+        </script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
         </script>
         <style>
             body {
@@ -13,7 +14,7 @@
                 width: 90%;
                 max-width: 70ch;
             }
-            solution {
+            .solution {
                 color: blue;
             }
         </style>
@@ -25,53 +26,82 @@
         <p>Analyse the logical forms of the following statements:</p>
         <h3>a</h3>
         <p>
-        We'll have either a reading assignment or homework problems, but we won't have
-        both homework problems, but we won't have both homework problems and a test.
+        We'll have either a reading assignment or homework problems, but we 
+        won't have both homework problems, but we won't have both homework 
+        problems and a test.
         </p>
-        <solution>
-        <h4>Solution</h4>
-        <p>
-        If we define the statement "we'll have a reading assignment" as \(R\) and "we'll
-        have homework problems" as \(H\) then we can write the statement as
-        \[(R \lor H) \land \neg (R \land H)\]
-        </p>
-        </solution>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define the statement "we'll have a reading assignment" as 
+            \(R\) and "we'll have homework problems" as \(H\) then we can write
+            the statement as
+            \[(R \lor H) \land \neg (R \land H)\]
+            </p>
+        </a>
         <h3>b</h3>
         <p>
         You won't go skiing, or you will and there won't be any snow.
         </p>
-        <solution>
-        <h4>Solution</h4>
-        <p>
-        If we define "you will go skiing" as \(K\) and "there will be snow" as \(S\) 
-        then we can write the statement as
-        \[\neg K \lor (K \land \neg S)\]
-        </p>
-        </solution>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define "you will go skiing" as \(K\) and "there will be snow"
+            as \(S\) then we can write the statement as
+            \[\neg K \lor (K \land \neg S)\]
+            </p>
+        </a>
         <h3>c</h3>
         <p>
         \[\sqrt{7} \nleq 2\]
         </p>
-        <solution>
-        <h4>Solution</h4>
-        <p>
-        If we define \(\sqrt{7} \lt 2\) as \(A\) and \(\sqrt{7} = 2\) as B then we
-        can write the statement as
-        \[\neg(A \land B)\]
-        </p>
-        </solution>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define \(\sqrt{7} \lt 2\) as \(A\) and \(\sqrt{7} = 2\) as B 
+            then we can write the statement as
+            \[\neg(A \land B)\]
+            </p>
+        </a>
 
         <h2>Exercise 2</h2>
         <p>Analyze the logical forms of the following statements:</p>
         <h3>a</h3>
-        <p>Either John and Bill are both telling the truth, or neither of them is.</p>
-        <solution>
-        <h4>Solution</h4>
         <p>
-        If we define "John tells the truth" as \(J\) and "Bill tells the truth" as 
-        \(B\) then we can write the statement as
-        \[(J \land B) \lor (\neg J \land \neg B)\]
+        Either John and Bill are both telling the truth, or neither of them is.
         </p>
-        </solution>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define "John tells the truth" as \(J\) and "Bill tells the 
+            truth" as \(B\) then we can write the statement as
+            \[(J \land B) \lor (\neg J \land \neg B)\]
+            </p>
+        </a>
+        <h3>b</h3>
+        <p>
+        I'll have either fish or chicken, but I won't have both fish and mashed
+        potatoes.
+        </p>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define "I'll have fish" as \(F\) and "I'll have chicken" as 
+            \(C\) and "I'll have mashed potatoes" as \(M\) then we can write the
+            statemement as
+            \[(F \lor C) \land \neg (F \land M)\]
+            </p>
+        </a>
+        <h3>c</h3>
+        <p>3 is a common divisor of 6, 9 and 15</p>
+        <a class=solution>
+            <h4>Solution</h4>
+            <p>
+            If we define "\(3\) divides \(6\)" as \(A\) and "\(3\) divides 
+            \(9\)" as \(B\) and "\(3\) divides \(15\)" as \(C\) then we can 
+            write the statement as
+            \[A \land B \land C\]
+            </p>
+        </a>
     </body>
 </html>
