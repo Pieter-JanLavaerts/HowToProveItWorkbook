@@ -106,5 +106,158 @@
             \[A \land B \land C\]
             </p>
         </a>
+
+		<h2>Exercise 3</h2>
+		<p>Analyze the logical forms of the following statements:</p>
+		<h3>a</h3>
+		<p>
+		Alice and Bob are not both in the room.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(A\) stand for "Alice is in the room" and let \(B\)
+			stand for "Bob is in the room" then we can write the statement
+			as
+			\[\neg (A \land B)\]
+			</p>
+		<h3>b</h3>
+		<p>
+		Alice and Bob are both not in the room.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(A\) stand for "Alice is in the room" and let \(B\)
+			stand for "Bob is in the room" then we can write the statement
+			as
+			\[(\neg A \land \neg B)\]
+			</p>
+		</a>
+		<h3>c</h3>
+		<p>
+		Either Alice or Bob is not in the room
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(A\) stand for "Alice is in the room" and let \(B\)
+			stand for "Bob is in the room" then we can write the statement
+			as
+			\[\neg A \lor \neg B\]
+			</p>
+		</a>
+		<h3>d</h3>
+		<p>
+		Neither Alice or Bob is in the room
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(A\) stand for "Alice is in the room" and let \(B\)
+			stand for "Bob is in the room" then we can write the statement
+			as
+			\[(\neg A \land \neg B)\]
+			</p>
+		</a>
+
+		<h2>Exercise 4</h2>
+		<p>Analyze the logical forms of the following statements:</p>
+		<h3>a</h3>
+		<p>
+		Either both Ralph and Ed are tall, or both of them are handsome.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(R\) stand for "Ralph is tall", \(E\) for "Ed is
+			tall", \(S\) for "Ralph is handsome" and \(F\) for "Ed is
+			handsome" then we can write the statement as
+			\[(R \land E) \lor (S \land F)\]
+			</p>
+		<h3>b</h3>
+		<p>
+		Both Ralph and Ed are either tall or handsome.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(R\) stand for "Ralph is tall", \(E\) for "Ed is
+			tall", \(S\) for "Ralph is handsome" and \(F\) for "Ed is
+			handsome" then we can write the statement as
+			\[(R \lor S) \land (E \lor F) \land \neg (R \land S) \land 
+			\neg (E \land F)\]
+			</p>
+		</a>
+		<h3>c</h3>
+		<p>
+		Both Ralph and Ed are neither tall nor handsome
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(R\) stand for "Ralph is tall", \(E\) for "Ed is
+			tall", \(S\) for "Ralph is handsome" and \(F\) for "Ed is
+			handsome" then we can write the statement as
+			\[\neg R \land \neg E \land \neg S \land \neg F\]
+			</p>
+		</a>
+		<h3>d</h3>
+		<p>
+		Neither Ralph nor Ed is both tall and handsome
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(R\) stand for "Ralph is tall", \(E\) for "Ed is
+			tall", \(S\) for "Ralph is handsome" and \(F\) for "Ed is
+			handsome" then we can write the statement as
+			\[\neg (R \land S) \land \neg (E \land F)\]
+			</p>
+		</a>
+
+		<h2>Exercise 5</h2>
+		<p>Which of the following expressions are well-formed formulas?</p>
+		<h3>a</h3>
+		<p>\[\neg (\neg P \lor \neg \neg R)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Well-formed
+			</p>
+		</a>
+		<h3>b</h3>
+		<p>\[\neg (P, Q, \land R)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Not well-formed. Comma's are not part of the language of sentential 
+			logic.
+			</p>
+		</a>
+		<h3>c</h3>
+		<p>\[P \land \neg P\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Well-formed
+			</p>
+		</a>
+		<h4>d</h4>
+		<p>\[(P \land Q)(P \lor R)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Not well-formed. There should be a logical connective in
+			between \()(\).
+			</p>
+		</a>
+
+		<h2>Exercise 6</h2>
+		<p>
+		Let \(P\) stand for the statement "I will buy the pants" and
+		\(S\) for the statement "I will buy the shirt" What English sentences
+		are represented by the following formulas?
+		</p>
     </body>
 </html>
