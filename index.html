@@ -11,7 +11,6 @@
         <style>
             body {
                 margin: 0 auto;
-                width: 90%;
                 max-width: 70ch;
             }
             .solution {
@@ -284,5 +283,159 @@
 			I won't buy the pants or I won't buy the shirt.
 			</p>
 		</a>
-    </body>
+
+		<h2>Exercise 7</h2>
+		<p>
+		Let \(S\) stand for the statement "Steve is happy" and \(G\) for
+		"George is happy." What English sentences are represented by the 
+		following formulas?
+		</p>
+		<h3>a</h3>
+		<p>\[(S \lor G) \land (\neg S \lor \neg G)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			From Steve and George, one is happy and one isn't.
+			</p>
+		</a> 
+		<h3>b</h3>
+		<p>\[[S \lor (G \land \neg S)] \lor \neg G\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			This statement is always true.
+			</p>
+		</a> 
+		<h3>c</h3>
+		<p>\[S \lor [G \land (\neg S \lor \neg G)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Steve is happy or George is happy or both are.
+			</p>
+		</a> 
+
+		<h2>Exercise 8</h2>
+		<p>
+		Let \(T\) stand for the statement "Taxes will go up" and \(D\) for "The
+		deficit will go up." What English sentences are represented by the
+		following formulas?
+		</p>
+		<h3>a</h3>
+		<p>\[T \lor D\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Taxes will go up or the deficit will go up (or both).
+			</p>
+		</a> 
+		<h3>b</h3>
+		<p>\[\neg (T \land D) \lor \neg (\neg T \land \neg D)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			\[\begin{aligned}
+				&\equiv \neg (T \land D) \lor (T \lor D)\\
+				&\equiv \neg T \lor \neg D \lor T \lor D\\
+				&\equiv True\\
+			\end{aligned}\]
+			This statement is always true.
+			</p>
+		</a> 
+		<h3>c</h3>
+		<p>\[(T \land \neg D) \lor (D \land \neg T)\]</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			Either taxes will go up or the defict will go up (and not both).
+			</p>
+		</a> 
+
+		<h2>Exercise 9</h2>
+		<p>
+		Ientify the premises and conclusions of the following deductive 
+		arguments and analyze their logical forms. Do you think the reasoning
+		is valid? (Although you will have only your intuition to guide you in
+		answering this last question, in the next section we will develop some
+		techniques for determining the validity of arguments.)
+		</p>
+		<h3>a</h3>
+		<p>
+		Jane and Pete won't both win the same math prize. Pete will win either
+		the math prize or the chemistry prize. Jane will win the math prize.
+		Therefore, Pete will win the chemistry prize.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(M(J)\) stand for the statement "Jane will win the math
+			prize", \(C(J)\) stand for the statement "Jane will win the 
+			chemistry prize", \(M(P)\) stand for the statement "Pete will win 
+			the math prize" and \(C(P)\) stand for the statement "Pete will win 
+			the chemistry prize".
+			Then we can write the problem statement as
+			\[\neg(M(J) \land M(P)) \land (M(P) \lor C(P)) \land M(J) \implies
+			C(P)\]
+			The reasoning is valid.
+			</p>
+		</a>
+		<h3>b</h3>
+		<p>
+		The main course will be either beef or fish. The vegetable will be 
+		either peas or corn. We will not have both fish as a main course and  
+		corn as a vegetable. Therefore, we will not have both beef as a main 
+		course and peas as a vegetable.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(B\) stand for the statement "the main course will be
+			beef", \(F\) for the satement "the main course will be fish", \(P\) 
+			for the statement "the vegetable will be peas" and \(C\) for the 
+			statement "the vegetable will be corn". Then we can write the 
+			problem statement as 
+			\[(B \oplus F) \land (P \oplus C) \land \neg (F \land C) \implies 
+			\neg (B \land P)\] 
+			We can still have fish and peas, beef and peas and beef and corn.
+			The reasoning is wrong.
+			</p>
+		</a>
+		<h3>c</h3>
+		<p>
+		Either John or Bill is telling the truth. Either Sam or Bill is lying.
+		Therefore, either John is telling the truth or Sam is lying.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(J\) stand for the statement "John is telling the truth"
+			, \(B\) stand for the statement "Bill is telling the truth" and 
+			\(S\) stand for the statement "Sam is telling the truth". Then we 
+			can rewrite the problem statement as
+			\[(J \oplus B) \land (\neg S \oplus \neg B) \implies (J \oplus \neg 
+			S)\].
+			We can rewrite the premise as
+			\[(J \land \neg S) \oplus (J \land \neg B) \oplus (B \land \neg S)
+			\]
+			It is possible that \(J \land \neg S\) therefore the conclusion is
+			wrong.
+			</p>
+		</a>
+		<h4>d</h4>
+		<p>
+		Either sales will go up and the boss will be happy, or expenses will go
+		up and the boss won't be happy. Therefore, sales and expenses will not
+		both go up.
+		</p>
+		<a class=solution>
+			<h4>Solution</h4>
+			<p>
+			If we let \(S\) stand for the statement "sales will go up", \(E\)
+			for the statement "expenses will go up" and \(B\) for the statement
+			"the boss is happy" then we can rewrite the problem statement as
+			\[(S \land B) \oplus (E \land \neg B) \implies \neg (S \land E)\]
+			This reasoning is correct.
+			</p>
+		</a>
+	</body>
 </html>
